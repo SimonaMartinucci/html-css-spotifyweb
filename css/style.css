@@ -55,17 +55,13 @@ main {
     color: white;
 }
 
-/* .player div {
-    height: 100%;
-} */
-
-.item-left,
-.item-right {
+.player-left,
+.player-right {
     width: 25%;
 }
 
 /* parte sinistra player */
-.item-left {
+.player-left {
     display: flex;
     align-items: center;
 }
@@ -109,7 +105,7 @@ main {
 
 
 
-.item-center {
+.player-center {
     width: 50%;
     /* DEBUG */
     height: 100%;
@@ -118,8 +114,26 @@ main {
 
 
 /* parte destra player */
-.item-right {
-    /* DEBUG */
+.player-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.player-right i {
+    font-size: 12px;
+}
+
+.bar {
+    width: 40%;
+    height: 3px;
+    margin-right: 10px;
+    background-color: #5a5a5a;
+}
+
+.small-bar {
+    width: 25%;
     height: 100%;
-    background-color: pink;
+    background-color: #c1c1c1;
 }

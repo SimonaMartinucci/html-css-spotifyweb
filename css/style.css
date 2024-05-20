@@ -104,7 +104,6 @@ main {
     margin-right: 10px;
 }
 
-
 /* parte centrale player */
 .player-center {
     width: 50%;
@@ -129,15 +128,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
     margin-top: 10px;
+}
+
+.now-playing .bar {
+    margin: 0 30px;
 }
 
 .now-playing span {
     font-size: 8px;
 }
-
-
 
 /* parte destra player */
 .player-right {
@@ -162,4 +162,56 @@ main {
     width: 25%;
     height: 100%;
     background-color: #c1c1c1;
+}
+
+/* PLAYER versione tablet */
+@media all and (max-width:1025px) {
+    .player-left,
+    .player-center,
+    .player-right {
+        width: calc(100% / 3);
+    }
+
+    .now-playing .bar {
+        width: 90%;
+        margin: 0 15px;
+    }
+}
+
+/* PLAYER versione big mobile */
+@media all and (max-width:768px) {
+    .player-left,
+    .player-center,
+    .player-right {
+        width: calc(100% / 3 - 20px);
+    }
+
+    .like a {
+        display: block;
+    }
+
+    .play {
+        gap: 15px;
+    }
+
+    .now-playing .bar {
+        margin: 0 5px;
+    }
+}
+
+/* PLAYER versione small mobile */
+@media all and (max-width:540px) {
+    .player-left,
+    .player-center,
+    .player-right {
+        width: calc(100% / 3);
+    }
+
+    .song {
+        margin-right: 5px;
+    }
+
+    .player-right {
+        gap: 5px;
+    }
 }

@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+:root {
+    --grey: #878787;
 }
 
 a {
@@ -26,17 +31,31 @@ li {
     background-color: yellow;
 }
 
+
+/* PARTE PRINCIPALE */
 main {
     width: calc(100% - 200px);
     overflow-y: auto;
-    /* DEBUG */
-    background-color: red;
+    background-color: #141922;
 }
 
 .upgrade {
     height: 80px;
     /* DEBUG */
     background-color: green;
+}
+
+/* contenuto principale */
+.content ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--grey);
+    font-size: 12px;
+    font-weight: 600;
 }
 
 
@@ -52,11 +71,6 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
-}
-
-.player a {
-    color: white;
 }
 
 .player-left,
@@ -96,8 +110,8 @@ main {
 }
 
 .song h6,
-.like a {
-    color: #878787;
+.like i {
+    color: var(--grey);
 }
 
 .like .fa-heart {

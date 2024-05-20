@@ -5,7 +5,46 @@
     font-family: "Montserrat", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
 
+li {
+    list-style-type: none;
+}
+
+
+/* MAIN CONTENT */
+.main-content {
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+.menu {
+    width: 200px;
+    /* DEBUG */
+    background-color: yellow;
+}
+
+main {
+    width: calc(100% - 200px);
+    overflow-y: auto;
+    /* DEBUG */
+    background-color: red;
+}
+
+.upgrade {
+    height: 80px;
+    /* DEBUG */
+    background-color: green;
+}
+
+
+
+
+
+
+/* PLAYER */
 .player {
     width: 100%;
     height: 100px;

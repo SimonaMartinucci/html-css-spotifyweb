@@ -55,6 +55,10 @@ main {
     color: white;
 }
 
+.player a {
+    color: white;
+}
+
 .player-left,
 .player-right {
     width: 25%;
@@ -92,7 +96,7 @@ main {
 }
 
 .song h6,
-.like {
+.like a {
     color: #878787;
 }
 

@@ -101,16 +101,38 @@ main {
 }
 
 
-
-
-
-
+/* parte centrale player */
 .player-center {
     width: 50%;
-    /* DEBUG */
-    height: 100%;
-    background-color: aqua;
 }
+
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.play i {
+    font-size: 14px;
+}
+
+.play i.fa-circle-play {
+    font-size: 30px;
+}
+
+.now-playing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.now-playing span {
+    font-size: 8px;
+}
+
 
 
 /* parte destra player */

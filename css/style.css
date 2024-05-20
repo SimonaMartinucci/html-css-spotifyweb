@@ -27,6 +27,7 @@ li {
 
 .menu {
     width: 200px;
+    z-index: 800;
     /* DEBUG */
     background-color: yellow;
 }
@@ -39,17 +40,42 @@ main {
     background-color: #141922;
 }
 
+/* barra upgrade */
 .upgrade {
     height: 80px;
-    /* DEBUG */
-    background-color: green;
+    position: fixed;  
+    top: 0;
+    right: 0;
+    z-index: 500; 
+    width: 100%;
+    text-align: right;
+    background-color: rgba(8, 11, 18, 0.5);
+}
+
+.upgrade div {
+    padding-top: 30px;
+}
+
+.upgrade a {
+    margin-right: 10px;
+    margin-top: 40px;
+    padding: 8px 25px;
+    border: 1px solid white;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 /* contenuto principale */
+.content {
+    padding-top: 100px;
+}
+
 .content ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 nav a {

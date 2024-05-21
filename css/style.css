@@ -42,6 +42,10 @@ li {
     padding: 20px 0 30px;
 }
 
+.small-logo {
+    display: none;
+}
+
 .flex-menu {
     display: flex;
     align-items: center;
@@ -78,7 +82,8 @@ li {
     margin-right: 10px;
 }
 
-.playlist-name {
+.playlist-name ul {
+    max-height: 220px;
     overflow-y: auto;
 }
 
@@ -118,6 +123,41 @@ li {
 a.my-name {
     margin-left: 10px;
     color: white;
+}
+
+
+/* BARRA LATERALE versione small mobile */
+@media all and (max-width:540px) {
+    .menu {
+        width: 50px;
+        padding: 0 10px;
+    }
+    
+    .big-logo {
+        display: none;
+    }
+
+    .small-logo {
+        display: block;
+        width: 30px;
+    }
+
+    .flex-menu a,
+    .playlist h4,
+    .playlist i,
+    .playlist-name a {
+        display: none;
+    }
+
+    .account .flex-menu:first-child {
+        border-bottom: none;
+    }
+
+    .icon {
+        display: inline-block;
+        width: 25px;
+        margin: 0;
+    }
 }
 
 
@@ -237,6 +277,13 @@ section h2 {
     /* prima riga contenuti */
     .col {
         width: calc(100% / 2 - 20px);
+    }
+}
+
+/* PARTE PRINCIPALE versione small mobile */
+@media all and (max-width:540px) {
+    main {
+        width: calc(100% - 50px);
     }
 }
 
@@ -411,5 +458,50 @@ section h2 {
 
     .player-right {
         gap: 5px;
+    }
+}
+
+
+
+
+
+/* versione piccola in altezza */
+@media all and (max-height:600px) {
+    .player {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 900;
+    }
+
+    .menu {
+        z-index: 800;
+    }
+
+    .account {
+        z-index: 800;
+        background-color: black;
+
+    }
+
+    .principal {
+        height: calc(100% - 150px);
+        z-index: 500;
+    }
+
+    .playlist-name {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+}
+
+/* versione piccolissima in altezza */
+@media all and (max-height:250px) {
+    .account {
+        z-index: 200;
+    }
+
+    .principal {
+        height: 100%;
     }
 }

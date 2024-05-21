@@ -37,6 +37,11 @@ li {
     justify-content: space-between;
 }
 
+.principal {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo {
     width: 70%;
     padding: 20px 0 30px;
@@ -82,9 +87,9 @@ li {
     margin-right: 10px;
 }
 
-.playlist-name ul {
-    max-height: 220px;
-    overflow-y: auto;
+.playlist-name {
+    min-height: 0;
+    overflow: auto;
 }
 
 .playlist-name li {
@@ -92,6 +97,10 @@ li {
 }
 
 /* account */
+.account {
+    height: 70px;
+}
+
 .account .icon {
     font-size: 12px;
     margin-right: 5px;
@@ -132,7 +141,7 @@ a.my-name {
         width: 50px;
         padding: 0 10px;
     }
-    
+
     .big-logo {
         display: none;
     }
@@ -492,11 +501,11 @@ section h2 {
     }
 
     .principal {
-        height: calc(100% - 150px);
+        height: calc(100% - 80px);
         z-index: 500;
     }
 
-    .playlist-name {
+    .playlist-name ul {
         max-height: 200px;
         overflow-y: auto;
     }

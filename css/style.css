@@ -25,12 +25,102 @@ li {
     display: flex;
 }
 
+
+/* BARRA LATERALE SINISTRA */
 .menu {
     width: 200px;
     z-index: 800;
-    /* DEBUG */
-    background-color: yellow;
+    background-color: black;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.logo {
+    width: 70%;
+    padding: 20px 0 30px;
+}
+
+.flex-menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 18px;
+    margin-right: 8px;
+}
+
+.icon img {
+    filter: invert(0.5);
+}
+
+.flex-menu a,
+.playlist h4,
+.playlist-name a {
+    font-size: 12px;
+}
+
+.flex-menu a,
+.playlist-name a {
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.playlist h4 {
+    margin: 20px 0 10px;
+}
+
+.playlist i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.playlist-name {
+    overflow-y: auto;
+}
+
+.playlist-name li {
+    margin-bottom: 10px;
+}
+
+/* account */
+.account .icon {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.account i {
+    color: var(--grey);
+}
+
+.account .flex-menu:first-child {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--grey);
+}
+
+.profile {
+    width: 20px;
+    height: 20px;
+    background-color: var(--grey);
+    border-radius: 50%;
+}
+
+.profile img {
+    width: 85%;
+    padding-left: 3px;
+    object-fit: contain;
+    filter: invert(0);
+}
+
+a.my-name {
+    margin-left: 10px;
+    color: white;
+}
+
+
 
 
 /* PARTE PRINCIPALE */

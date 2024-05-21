@@ -482,7 +482,7 @@ section h2 {
 
 
 /* versione piccola in altezza */
-@media all and (max-height:600px) {
+@media all and (max-height:620px) {
     .player {
         position: fixed;
         bottom: 0;
@@ -495,7 +495,7 @@ section h2 {
     }
 
     .account {
-        z-index: 800;
+        z-index: 900;
         background-color: black;
 
     }
@@ -504,15 +504,10 @@ section h2 {
         height: calc(100% - 80px);
         z-index: 500;
     }
-
-    .playlist-name ul {
-        max-height: 200px;
-        overflow-y: auto;
-    }
 }
 
 /* versione piccolissima in altezza */
-@media all and (max-height:250px) {
+@media all and (max-height:280px) {
     .account {
         z-index: 200;
     }

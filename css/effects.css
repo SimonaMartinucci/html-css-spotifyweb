@@ -1,0 +1,11 @@
+.col:hover {
+    cursor: pointer;
+}
+
+.row img:hover {
+    filter: brightness(50%);
+}
+
+.col img:hover + .fa-circle-play {
+    display: block;
+}

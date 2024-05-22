@@ -24,3 +24,37 @@ nav a:hover {
 nav a:active + .green-low {
     display: block;
 }
+
+/* hover_active barra laterale sinistra */
+.flex-menu.upper:hover {
+    padding-left: 16px;
+    border-left: 4px solid var(--green);
+}
+
+.flex-menu a:hover,
+.playlist-name a:hover {
+    color: white;
+}
+
+/* hover player */
+.player-left h6:hover,
+.player-left i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.player-center .fa-circle-play:hover {
+    transform: scale(1.2);
+}
+
+.bar:hover {
+    cursor: pointer;
+}
+
+.bar:hover .small-bar {
+    background-color: var(--green);
+}
+
+.bar:hover i {
+    display: block;
+}

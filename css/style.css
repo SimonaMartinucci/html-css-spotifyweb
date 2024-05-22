@@ -32,7 +32,6 @@ li {
     width: 200px;
     z-index: 800;
     background-color: black;
-    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,7 +46,7 @@ li {
 
 .logo {
     width: 70%;
-    padding: 20px 0 30px;
+    padding: 20px 20px 30px 20px;
 }
 
 .small-logo {
@@ -58,6 +57,10 @@ li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.flex-menu.upper {
+    padding-left: 20px;
 }
 
 .icon {
@@ -79,6 +82,12 @@ li {
 .playlist-name a {
     font-weight: 600;
     color: var(--grey);
+}
+
+.playlist,
+.playlist-name,
+.account {
+    padding: 0 20px;
 }
 
 .playlist h4 {
@@ -433,18 +442,6 @@ section h2 {
     font-size: 8px;
 }
 
-/* parte destra player */
-.player-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 15px;
-}
-
-.player-right i {
-    font-size: 12px;
-}
-
 .bar {
     width: 40%;
     height: 3px;
@@ -457,6 +454,33 @@ section h2 {
     height: 100%;
     background-color: #c1c1c1;
 }
+
+.small-bar {
+    position: relative;
+}
+
+.small-bar .fa-circle {
+    display: none;
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -10%;
+}
+
+
+
+/* parte destra player */
+.player-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.player-right i {
+    font-size: 12px;
+}
+
 
 
 /* PLAYER versione tablet */

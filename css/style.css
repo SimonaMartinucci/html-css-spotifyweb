@@ -40,6 +40,8 @@ li {
 .principal {
     display: flex;
     flex-direction: column;
+    height: calc(100% - 80px);
+    z-index: 500;
 }
 
 .logo {
@@ -99,6 +101,8 @@ li {
 /* account */
 .account {
     height: 70px;
+    z-index: 900;
+    background-color: black;
 }
 
 .account .icon {
@@ -288,6 +292,7 @@ section h2 {
     }
 }
 
+
 /* PARTE PRINCIPALE versione big mobile */
 @media all and (max-width:768px) {
     /* prima riga contenuti */
@@ -318,6 +323,10 @@ section h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 900;
 }
 
 .player-left,
@@ -425,6 +434,7 @@ section h2 {
     background-color: #c1c1c1;
 }
 
+
 /* PLAYER versione tablet */
 @media all and (max-width:1025px) {
     .player-left,
@@ -438,6 +448,7 @@ section h2 {
         margin: 0 15px;
     }
 }
+
 
 /* PLAYER versione big mobile */
 @media all and (max-width:768px) {
@@ -460,6 +471,7 @@ section h2 {
     }
 }
 
+
 /* PLAYER versione small mobile */
 @media all and (max-width:540px) {
     .player-left,
@@ -480,39 +492,13 @@ section h2 {
 
 
 
-
-/* versione piccola in altezza */
-@media all and (max-height:620px) {
-    .player {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        z-index: 900;
-    }
-
-    .menu {
-        z-index: 800;
-    }
-
-    .account {
-        z-index: 900;
-        background-color: black;
-
-    }
-
-    .principal {
-        height: calc(100% - 80px);
-        z-index: 500;
-    }
-}
-
 /* versione piccolissima in altezza */
 @media all and (max-height:280px) {
-    .account {
-        z-index: 200;
-    }
-
     .principal {
         height: 100%;
+    }
+
+    .account {
+        z-index: 200;
     }
 }

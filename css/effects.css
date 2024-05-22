@@ -1,3 +1,4 @@
+/* hover sopra album */
 .col:hover {
     cursor: pointer;
 }
@@ -7,5 +8,19 @@
 }
 
 .col img:hover + .fa-circle-play {
+    display: block;
+}
+
+/* hover barra upgrade */
+.upgrade a:hover {
+    font-size: 14px;
+}
+
+/* hover_active menu in alto */
+nav a:hover {
+    color: white;
+}
+
+nav a:active + .green-low {
     display: block;
 }

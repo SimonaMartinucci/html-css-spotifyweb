@@ -8,6 +8,7 @@
 
 :root {
     --grey: #878787;
+    --green: #9be52d;
 }
 
 a {
@@ -233,6 +234,19 @@ nav a {
     color: var(--grey);
     font-size: 12px;
     font-weight: 600;
+}
+
+.green-low {
+    display: none;
+    width: 40%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: var(--green);
+    color: var(--green);
+}
+
+.act {
+    display: block;
 }
 
 /* righe contenuti */
